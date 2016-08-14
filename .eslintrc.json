@@ -1,0 +1,23 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "impliedStrict": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "extends": "airbnb",
+    "plugins": [
+        "react",
+        "eslint-plugin-react"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+        "no-console": "off",
+        "no-inline-comments": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "eslint linebreak-style": ["error", "windows"]
+    }
+}
