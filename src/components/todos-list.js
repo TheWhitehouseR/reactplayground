@@ -10,17 +10,20 @@ export default class TodosList extends React.Component {
         return _.map(this.props.todos, (todo, index) => 
             <TodosListItem key={index} {...todo} {...props}/>);
     }
-    
+   
     render() {
         //console.log(this.props);
 
         return (
-            <table>
-                <TodosListHeader />
-                <tbody>
-                    {this.renderItems()}
-                </tbody>
-            </table>
+            <div>
+                <table>
+                    <TodosListHeader />
+                    <tbody>
+                        {this.renderItems()}
+                    </tbody>
+                </table>
+                <button onClick={this.props.removeCompleted.bind(this)}>Remove completed</button>
+            </div>
         );
     }
 }
