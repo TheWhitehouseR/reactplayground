@@ -8,16 +8,31 @@
             "experimentalObjectRestSpread": true
         }
     },
-    "extends": "airbnb",
+    "globals": {
+        "expect": true
+    },
     "plugins": [
         "react",
         "eslint-plugin-react"
     ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "env" : {
+        "node": true,
+        "browser": true,
+        "mocha": true
+    },
     "parser": "babel-eslint",
     "rules": {
         "no-console": "off",
         "no-inline-comments": "off",
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "eslint linebreak-style": ["error", "windows"]
+        "linebreak-style": ["error", "windows"],
+        "comma-dangle": ["error", "always"],
+        "no-cond-assign": ["error", "always"],
+        "indent": ["error", 2],
+        "quotes": ["error", "single"]
     }
 }
