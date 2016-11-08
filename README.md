@@ -11,4 +11,6 @@ This webpack server supports hot reloading, allowing you to test your changes wi
 
 To run the tests, type npm test.  I still haven't managed to get test:watch working which is supposed to stay running in the background and run the tests everytime something in the folder has changed.
 
+By the way, generally it is easier to use Git Bash if you are on windows since some packages rely on using linux commands.
+
 Have fun learning React!

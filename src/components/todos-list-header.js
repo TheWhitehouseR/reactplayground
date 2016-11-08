@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default class TodosListHeader extends React.Component {
-    render() {
-        return (
+  render() {
+    return (
             <thead>
                 <tr>
                     <th>Task</th>
@@ -10,5 +10,5 @@ export default class TodosListHeader extends React.Component {
                 </tr>
             </thead>
         );
-    }
+  }
 }
